@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">LaboratoryWork3</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="meetings_list_refresh_button_description">Refresh meetings</string>
+    <string name="meetings_list_add_button_description">Add meeting</string>
+    <string name="meeting_list_item_go_button_text">GO!</string>
+    <string name="meeting_file_name">meetings.json</string>
+
+    <!-- TODO change IP -->
+    <string name="baseURL">http://192.168.0.104:8080/meetings-app/rest/</string>
+
+    <string name="meeting_title_label">Title: </string>
+    <string name="meeting_summary_label">Summary:</string>
+    <string name="meeting_start_date_label">Starts at:</string>
+    <string name="meeting_end_date_label">Ends at:</string>
+    <string name="meeting_priority_label">Priority</string>
+    <string name="meeting_add_button">Add meeting</string>
+    <string name="date_format">dd.MM.yyyy HH:mm</string>
+    <string name="meeting_list_item_remove_button_text">Delete meeting</string>
+    <string name="meeting_list_item_view_button_text">View full info</string>
+
+    <string-array name="meeting_priorities">
+        <item>Urgent</item>
+        <item>Planned</item>
+        <item>If possible</item>
+    </string-array>
+</resources>

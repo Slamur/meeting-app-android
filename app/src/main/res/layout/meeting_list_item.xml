@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/meeting_list_item_padding">
+
+    <TextView
+        android:id="@+id/meeting_list_item_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/meeting_list_item_view_padding"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/meeting_list_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/meeting_list_item_view_padding" />
+
+    <TextView
+        android:id="@+id/meeting_list_item_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/meeting_list_item_view_padding" />
+
+    <TextView
+        android:id="@+id/meeting_list_item_startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/meeting_list_item_view_padding" />
+
+    <TextView
+        android:id="@+id/meeting_list_item_endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/meeting_list_item_view_padding" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/meeting_list_item_remove"
+            android:contentDescription="@string/meeting_list_item_remove_button_text"
+            android:background="@android:drawable/ic_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/meeting_list_item_info"
+            android:contentDescription="@string/meeting_list_item_view_button_text"
+            android:background="@android:drawable/ic_menu_info_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/meeting_list_item_remove"/>
+
+        <Button
+            android:text="@string/meeting_list_item_go_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/meeting_list_item_info" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MeetingWithSummaryActivity">
+
+    <TextView
+        android:id="@+id/meeting_title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/meeting_title_edit"
+        android:layout_alignParentStart="true"
+        android:text="@string/meeting_title_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/meeting_title_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/meeting_title_label" />
+
+    <TextView
+        android:id="@+id/meeting_summary_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/meeting_summary_edit"
+        android:layout_alignParentStart="true"
+        android:text="@string/meeting_summary_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/meeting_summary_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meeting_title_edit"
+
+        android:layout_toEndOf="@+id/meeting_summary_label" />
+
+    <TextView
+        android:id="@+id/meeting_start_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/meeting_start_date_button"
+        android:layout_alignParentStart="true"
+        android:text="@string/meeting_start_date_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/meeting_end_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/meeting_end_date_button"
+        android:layout_alignParentStart="true"
+        android:text="@string/meeting_end_date_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/meeting_priority_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/meeting_end_date_label"
+        android:layout_marginTop="23dp"
+        android:text="@string/meeting_priority_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/meeting_priority_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/meeting_priority_label"
+        android:layout_alignTop="@+id/meeting_priority_label"
+        android:layout_toEndOf="@+id/meeting_priority_label" />
+
+    <Button
+        android:id="@+id/meeting_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meeting_priority_spinner"
+        android:layout_marginTop="55dp"
+        android:onClick="AddMeeting"
+        android:text="@string/meeting_add_button" />
+
+    <Button
+        android:id="@+id/meeting_start_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/meeting_summary_edit"
+        android:layout_below="@+id/meeting_summary_edit"
+        android:onClick="chooseStartDate"
+        android:text="Choose" />
+
+    <Button
+        android:id="@+id/meeting_end_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/meeting_summary_edit"
+        android:layout_below="@+id/meeting_start_date_label"
+        android:onClick="chooseEndDate"
+        android:text="Choose" />
+
+</RelativeLayout>
